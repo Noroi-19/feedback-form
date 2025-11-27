@@ -78,7 +78,7 @@ input[type=text],
 input[type=email],
 select,
 textarea {
-    width: 100%;
+    width: 90%;
     border-radius: 12px;
     border: none;
     outline: none;
@@ -101,7 +101,7 @@ textarea:focus {
 
 /* Dropdown readability */
 select {
-    color: rgb(151, 70, 151);
+    color: rgb(0, 0, 0);
     appearance: none;
     background: rgba(255, 255, 255, 0.25);
     padding-right: 30px;
@@ -195,7 +195,7 @@ textarea {
 .footer {
     margin-top: 25px;
     display: flex;
-    padding-left: 40%;
+    padding-left: 35%;
     /* justify-content: fle; */
     gap: 12px;
 }
@@ -208,12 +208,43 @@ textarea {
 
 /* Thank you box */
 .thank {
-    display: none;
+    width: 50%;
+    height: 50%;
+    display: block;
     padding: 20px;
     border-radius: 12px;
     background: rgba(0, 255, 128, 0.25);
-    border: 1px solid rgba(0, 255, 128, 0.5);
+    border: 2px solid rgba(0, 255, 128, 0.5);
     margin-top: 15px;
-    color: white;
-    font-size: 20px;
+    color: rgb(16, 11, 11);
+    font-size: 50px;
+      
 }
+/* Mobile */
+@media (max-width: 480px) {
+    .thank {
+        width: 80%;
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+/* Tablet */
+@media (min-width: 481px) and (max-width: 1023px) {
+    .thank {
+        width: 70%;
+        padding: 20px;
+        font-size: 18px;
+    }
+}
+
+.thankbody {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+    background: linear-gradient(135deg, #dadce8, #90aecb, #bdc6f7);
+
+}
+

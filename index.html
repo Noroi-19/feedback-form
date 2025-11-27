@@ -1,15 +1,18 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Surprise Event - Feedback Form</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="container">
     <h1> Aascharya Surprise Event Feedback Form</h1>
-    <p class="lead">Aapka feedback hamare liye bahut important hai. Kripya kuch minute nikal kar apne sachhe anubhav share karein.</p>
+    <p class="lead">Aapka feedback hamare liye bahut important hai. Kripya kuch minute nikal kar apne sachhe anubhav
+      share karein.</p>
 
     <form id="feedbackForm">
       <div class="grid">
@@ -24,7 +27,7 @@
         </div>
 
         <div class="field full">
-          <label>3. Overall experience / Overall Rating</label>
+          <label>3. Overall Rating</label>
           <div class="inline">
             <div class="stars" id="stars" aria-hidden="true">
               <span class="star" data-value="1">★</span>
@@ -39,7 +42,7 @@
 
         <div class="field full">
           <label>4.How much did the surprise meet expectations</label>
-          <select id="expectation">
+          <select id="expectation" required>
             <option value="5">Excellent </option>
             <option value="4">Good</option>
             <option value="3">Average </option>
@@ -49,7 +52,7 @@
         </div>
 
         <div class="field full">
-          <label>5.  Best part of Event</label>
+          <label>5. Best part of Event</label>
           <input type="text" id="bestPart" placeholder="Ex: Decoration, Surprise reveal, Team behaviour..." />
         </div>
 
@@ -68,15 +71,15 @@
         <div class="field full">
           <label>7.Did it touch you emotionally?</label>
           <div class="inline">
-            <label><input type="radio" name="emotional" value="Yes" checked /> Yes </label>
+            <label><input type="radio" name="emotional" value="Yes" required /> Yes </label>
             <label style="margin-left:12px"><input type="radio" name="emotional" value="No" /> No</label>
             <label style="margin-left:12px"><input type="radio" name="emotional" value="Somewhat" /> Somewhat </label>
           </div>
         </div>
 
         <div class="field full">
-          <label>8. Team ka behavior / Service quality rating (1-5)</label>
-          <select id="serviceRating">
+          <label>8. Team behavior / Service quality rating (1-5)</label>
+          <select id="serviceRating" required>
             <option value="5">5 - Excellent</option>
             <option value="4">4 - Good</option>
             <option value="3">3 - Average</option>
@@ -88,7 +91,7 @@
         <div class="field full">
           <label>9.Timing & Management</label>
           <div class="inline">
-            <label><input type="radio" name="timing" value="On time" checked /> On time</label>
+            <label><input type="radio" name="timing" value="On time" required /> On time</label>
             <label style="margin-left:12px"><input type="radio" name="timing" value="Delayed" /> Delayed</label>
             <label style="margin-left:12px"><input type="radio" name="timing" value="Poor" /> Poor</label>
           </div>
@@ -97,7 +100,7 @@
         <div class="field full">
           <label>10. Would you recommend us?</label>
           <div class="inline">
-            <label><input type="radio" name="recommend" value="Yes" checked /> Yes</label>
+            <label><input type="radio" name="recommend" value="Yes" required /> Yes</label>
             <label style="margin-left:12px"><input type="radio" name="recommend" value="Maybe" /> Maybe</label>
             <label style="margin-left:12px"><input type="radio" name="recommend" value="No" /> No</label>
           </div>
@@ -120,14 +123,13 @@
         <button type="submit" class="btn" id="submitBtn">Send Feedback</button>
       </div>
 
-      <div class="thank" id="thankBox">
-        <strong>Thanks! 🙏</strong>
-        <div class="small">Aapka feedback receive ho gaya hai. Hum jaldi contact karenge agar zaroorat hui.</div>
-      </div>
+
     </form>
 
   </div>
+ 
 
   <script src="script.js"></script>
 </body>
+
 </html>
